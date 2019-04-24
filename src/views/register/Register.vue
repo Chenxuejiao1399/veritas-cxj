@@ -1,6 +1,5 @@
 <template>
     <div class="veritas_bg">
-      <Header></Header>
       <div class="main">
         <div class="title">
           <div>请输入以下消息</div>
@@ -21,13 +20,11 @@
 </template>
 
 <script>
-  import Header from '../../components/Header'
   import { XInput,Group,XButton,Flexbox, FlexboxItem,Toast } from 'vux'
   export default {
     name: "Register",
     components: {
       XInput,Group,XButton,Flexbox,FlexboxItem,Toast,
-      Header
     },
     data(){
       return{
