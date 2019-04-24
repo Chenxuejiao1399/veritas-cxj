@@ -64,8 +64,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'HelloWorld',
       component: () => import('@/components/HelloWorld'),
@@ -79,13 +78,43 @@ export default new Router({
     {
       path: '/register',
       name: 'Register',
-      component: () => import(/* webpackChunkName: "Register" */ '@/views/register/Register'),
+      component: () => import( /* webpackChunkName: "Register" */ '@/views/register/Register'),
       meta: {
         title: '注册',
         requiresAuth: false,
         roleId: 1
       }
-    }
+    },
+    /* 答谢晚宴-cxj */
+    {
+      path: '/appreciationdinnerone',
+      name: 'AppreciationDinnerOne',
+      component: () => import( /* webpackChunkName: "testCxj" */ '@/views/testCxj/AppreciationDinnerOne'),
+      meta: {
+        title: '答谢晚宴',
+        requiresAuth: false,
+        roleId: 1
+      }
+    },
+    {
+      path: '/appreciationdinnertwo',
+      name: 'AppreciationDinnerTwo',
+      component: () => import( /* webpackChunkName: "testCxj" */ '@/views/testCxj/AppreciationDinnerTwo'),
+      meta: {
+        title: '答谢晚宴',
+        requiresAuth: false,
+        roleId: 1
+      }
+    },
+    {
+      path: '/mettingarrangment',
+      name: 'MeetingArrangement',
+      component: () => import( /* webpackChunkName: "testCxj" */ '@/views/testCxj/MeetingArrangement'),
+      meta: {
+        title: '会议安排',
+        requiresAuth: false,
+        roleId: 1
+      }
+    },
   ]
 })
-
