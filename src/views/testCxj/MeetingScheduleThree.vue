@@ -4,7 +4,7 @@
     <div class="main">
       <div class="title">
         <span>大会日程</span></br>
-        <span>Conference Agenda</span>
+        <span class="title_english">Conference Agenda</span>
       </div>
       <div class="metting_content">
         <ul>
@@ -83,23 +83,23 @@ export default {
   text-align:center;
   width:50vw;
   line-height:21pt;
-  margin:0 auto 30pt auto;
+  margin:0 auto 0 auto;
+}
+.title .title_english{
+  font-size:14px;
 }
 .metting_content{
-  margin-bottom:20pt;
-  height:70vh;
-  overflow:scroll;
-  overflow-x:hidden;
-  margin-top:37pt;
-  padding-bottom:20pt;
+  height: 65vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 10vh;
+  padding-bottom: 5vh;
 }
 .metting_content ul li{
-  padding: 0 20pt;
-  /* margin:5pt 0pt; */
-  /* background-color:rgba(13,3,70,0.5); */
-  height: 42pt;
-    line-height: 40pt;
-  overflow:hidden;
+  padding: 0 2vw;
+  height: 9vh;
+  line-height: 8vh;
+  overflow: hidden;
 }
 .metting_content ul li span{
   display:block;

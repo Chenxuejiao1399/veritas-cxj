@@ -20,6 +20,16 @@ export default {
   height: 100vh;
   overflow: hidden;
   color: #333333;
+  padding: 0;
+  margin: 0;
+
+  /* width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-bottom: 0.9rem; */
 }
 body {
   margin: 0;
